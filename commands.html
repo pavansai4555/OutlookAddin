@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AWS Lambda Add-in</title>
+    <!-- Reference to commands.js -->
+    <script src="https://yourdomain.com/commands.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1370.0.min.js"></script>
+</head>
+<body>
+<h2>AWS Lambda Trigger</h2>
+<form id="awsCredsForm">
+    <label for="accessKey">Access Key:</label><br>
+    <input type="text" id="accessKey" name="accessKey" required><br>
+    <label for="secretKey">Secret Key:</label><br>
+    <input type="password" id="secretKey" name="secretKey" required><br><br>
+    <button type="submit">Save & Trigger Lambda</button>
+</form>
+<pre id="output"></pre>
+</body>
+</html>
